@@ -50,7 +50,7 @@ export const signup = async (req, res) => {
                 coverImg: newUser.coverImg,
             });
         } else {
-            res.status(400).json({ errorS: "Invalid user data"});
+            res.status(400).json({ error: "Invalid user data"});
         }
     } catch (error) {
         console.log("Error in signup controller", error.message);
